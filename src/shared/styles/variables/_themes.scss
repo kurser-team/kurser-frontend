@@ -1,0 +1,27 @@
+@import "./_colors";
+
+$light-theme: (
+  color-primary: $color-primary-light,
+  color-secondary: $color-secondary-light,
+  color-success: $color-success-light,
+  color-attention: $color-attention-light,
+  color-error: $color-error-light,
+  color-on-primary: $color-on-primary-light,
+  color-background-primary: $color-background-primary-light,
+  color-background-secondary: $color-background-secondary-light,
+  color-foreground-primary: $color-foreground-primary-light,
+  color-foreground-secondary: $color-foreground-secondary-light,
+);
+
+$dark-theme: (
+  color-primary: $color-primary-dark,
+  color-secondary: $color-secondary-dark,
+  color-success: $color-success-dark,
+  color-attention: $color-attention-dark,
+  color-error: $color-error-dark,
+  color-on-primary: $color-on-primary-dark,
+  color-background-primary: $color-background-primary-dark,
+  color-background-secondary: $color-background-secondary-dark,
+  color-foreground-primary: $color-foreground-primary-dark,
+  color-foreground-secondary: $color-foreground-secondary-dark,
+);
