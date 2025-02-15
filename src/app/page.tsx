@@ -1,5 +1,3 @@
-const Home = () => {
-  return <div></div>
-}
+import { HomePage } from "@/pages"
 
-export default Home
+export default HomePage
