@@ -1,5 +1,5 @@
-@use "../../../../shared/styles/mixins/_flex.scss";
+@use "@shared/styles/mixins/flex" as flex;
 
 .container {
-  @include flex-col;
+  @include flex.flex-col;
 }
