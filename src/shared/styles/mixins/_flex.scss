@@ -3,3 +3,15 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin stack($gap: 0px) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+
+@mixin row($gap: 0px) {
+  display: flex;
+  flex-direction: row;
+  gap: $gap;
+}

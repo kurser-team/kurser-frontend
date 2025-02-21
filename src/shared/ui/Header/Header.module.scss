@@ -1,0 +1,17 @@
+@use "@shared/styles/mixins/_utils.scss" as utils;
+
+.container {
+  display: flex;
+}
+
+.logo-container {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  background-color: var(--color-background-primary);
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
