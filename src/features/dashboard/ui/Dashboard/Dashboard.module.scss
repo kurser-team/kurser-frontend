@@ -1,0 +1,8 @@
+@use "@shared/styles/mixins/flex" as flex;
+
+.container {
+  @include flex.stack(32px);
+
+  margin: auto;
+  max-width: 380px;
+}

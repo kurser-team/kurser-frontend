@@ -1,12 +1,12 @@
-@import "../mixins/_themes.scss";
-@import "../variables/_themes.scss";
+@use "../mixins/_themes.scss" as *;
+@use "../variables/_themes.scss" as themes;
 
 :root {
-  @include generate-theme($light-theme);
+  @include generate-theme(themes.$light-theme);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    @include generate-theme($dark-theme);
+    @include generate-theme(themes.$dark-theme);
   }
 }

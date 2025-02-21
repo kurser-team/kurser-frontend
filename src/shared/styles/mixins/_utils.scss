@@ -1,0 +1,9 @@
+@use "@shared/styles/variables/sizes" as sizes;
+
+@mixin rounded-full {
+  border-radius: 9999px;
+}
+
+@mixin rounded-top($border-radius: sizes.$border-radius-default) {
+  border-radius: $border-radius $border-radius 0 0;
+}
