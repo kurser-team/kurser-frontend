@@ -1,0 +1,33 @@
+@use "@shared/styles/mixins/flex" as flex;
+
+.container {
+  @include flex.flex-center;
+
+  width: 200px;
+  height: 200px;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+}
+
+.logo-container {
+  @include flex.flex-center;
+
+  position: relative;
+  width: 86.5%;
+  height: 83%;
+}
+
+.logo-without-arrow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.brand-arrow {
+  margin: 3% 0 0 0;
+  height: 19%;
+  width: 19%;
+}
