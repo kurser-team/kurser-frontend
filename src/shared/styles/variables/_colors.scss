@@ -1,32 +1,62 @@
-$color-primary-light: #e0944b;
-$color-primary-dark: #e0944b;
+// Widgets
 
-$color-secondary-light: #e7c9ab;
-$color-secondary-dark: #e7c9ab;
+$color-widget-bg-light: linear-gradient(90deg, rgba(145, 243, 194, 1) 0%, rgba(105, 105, 255, 1) 53%, rgba(0, 0, 0, 1) 100%);
+$color-widget-bg-dark: linear-gradient(90deg, rgba(145, 243, 194, 1) 0%, rgba(105, 105, 255, 1) 53%, rgba(0, 0, 0, 1) 100%);
 
-$color-success-light: #76e070;
-$color-success-dark: #76e070;
+$color-widget-pr-light: #181818;
+$color-widget-pr-dark: #181818;
 
-$color-attention-light: #e0cf70;
-$color-attention-dark: #e0cf70;
+$color-widget-pr-var-light: #181818;
+$color-widget-pr-var-dark: #181818;
 
-$color-error-light: #e08870;
-$color-error-dark: #e08870;
+$color-widget-sc-light: #1E1E1E;
+$color-widget-sc-dark: #1E1E1E;
 
-$color-on-primary-light: #f0f0f0;
-$color-on-primary-dark: #f0f0f0;
+$color-widget-sc-var-light: #1E1E1E;
+$color-widget-sc-var-dark: #1E1E1E;
 
-$color-on-secondary-light: #353535;
-$color-on-secondary-dark: #353535;
+// Text
 
-$color-background-primary-light: #0f0f0f;
-$color-background-primary-dark: #0f0f0f;
+$color-text-fg-pr-light: #FFFFFF;
+$color-text-fg-pr-dark: #FFFFFF;
 
-$color-background-secondary-light: #232323;
-$color-background-secondary-dark: #232323;
+$color-text-fg-light: #FFFFFF;
+$color-text-fg-dark: #FFFFFF;
 
-$color-foreground-primary-light: #3d3d3d;
-$color-foreground-primary-dark: #3d3d3d;
+$color-text-sc-light: #969696;
+$color-text-sc-dark: #969696;
 
-$color-foreground-secondary-light: #505050;
-$color-foreground-secondary-dark: #505050;
+$color-text-sc-var-light: #D5D5D5;
+$color-text-sc-var-dark: #D5D5D5;
+
+$color-text-suc-light: #58CA71;
+$color-text-suc-dark: #58CA71;
+
+$color-text-att-light: #FF5500;
+$color-text-att-dark: #FF5500;
+
+$color-text-err-light: #ff0000;
+$color-text-err-dark: #ff0000;
+
+$color-text-ln-light: #00ccff;
+$color-text-ln-dark: #00ccff;
+
+$color-button-fg-light: #D4FF1B;
+$color-button-fg-dark: #D4FF1B;
+
+$color-button-pr-light: #202020;
+$color-button-pr-dark: #202020;
+
+$color-button-sc-light: #202020;
+$color-button-sc-dark: #202020;
+
+// Icons & charts
+
+$color-icon-fg-light: #FF7300;
+$color-icon-fg-dark: #FF7300;
+
+$color-icon-pr-light: #FFFFFF;
+$color-icon-pr-dark: #FFFFFF;
+
+$color-icon-sc-light: #939393;
+$color-icon-sc-dark: #939393;
