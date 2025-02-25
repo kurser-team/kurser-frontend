@@ -2,9 +2,9 @@
 
 import { BrandArrow, LogoLongWithoutArrow } from "@/shared/icons"
 import { useMemo, useRef, useState } from "react"
+import { useMouseMove } from "@/shared/lib/hooks"
 
 import styles from "./AnimatedLogo.module.scss"
-import { useMouseMove } from "@/shared/lib/hooks"
 
 export const AnimatedLogo = () => {
   const brandArrowRef = useRef<HTMLElement>(null)
