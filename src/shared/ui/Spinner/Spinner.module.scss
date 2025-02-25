@@ -1,0 +1,47 @@
+.container {
+  display: grid;
+  width: fit-content;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+
+@mixin arrow-pulse-mixin($deltaX, $deltaY, $angle, $name) {
+  @keyframes #{$name} {
+    50% {
+      transform: translate($deltaX, $deltaY) rotate($angle);
+    }
+
+    100% {
+      transform: translate(0px, 0px) rotate($angle);
+    }
+  }
+}
+
+@mixin arrow-pulse-animation($deltaX, $deltaY, $angle, $name, $delay) {
+  @include arrow-pulse-mixin($deltaX, $deltaY, $angle, $name);
+
+  transform: translate(0px, 0px) rotate($angle);
+  animation: 1s infinite ease-in-out $delay $name;
+}
+
+.arrow {
+  width: 100%;
+  height: 100%;
+}
+
+.arrow-1 {
+  @include arrow-pulse-animation(3px, 3px, -135deg, arrow-pulse-1, 0ms);
+}
+
+.arrow-2 {
+  @include arrow-pulse-animation(-3px, 3px, -45deg, arrow-pulse-2, 0ms);
+}
+
+.arrow-3 {
+  @include arrow-pulse-animation(3px, -3px, 135deg, arrow-pulse-3, 0ms);
+}
+
+.arrow-4 {
+  @include arrow-pulse-animation(-3px, -3px, 45deg, arrow-pulse-4, 0ms);
+}

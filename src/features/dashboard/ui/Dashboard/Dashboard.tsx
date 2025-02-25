@@ -1,8 +1,9 @@
 import { Balance } from "@/features/balance"
 import { Header } from "@/shared/ui/Header"
+import { AnimatedLogo } from "@/features/auth/ui/AnimatedLogo"
+import { Spinner } from "@/shared/ui/Spinner"
 
 import styles from "./Dashboard.module.scss"
-import { AnimatedLogo } from "@/features/auth/ui/AnimatedLogo"
 
 export const Dashboard = () => {
   return (
@@ -10,7 +11,7 @@ export const Dashboard = () => {
       <Header />
       <Balance />
       <AnimatedLogo />
-      <input type="text" />
+      <Spinner style={{ width: "48px", height: "48px" }} />
     </div>
   )
 }

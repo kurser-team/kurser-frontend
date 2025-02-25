@@ -1,6 +1,6 @@
 "use client"
 
-import { BrandArrow, LogoLongWithoutArrow } from "@/shared/icons"
+import { BrandArrowIcon, LogoLongWithoutArrow } from "@/shared/icons"
 import { useMemo, useRef, useState } from "react"
 import { useMouseMove } from "@/shared/lib/hooks"
 
@@ -44,7 +44,7 @@ export const AnimatedLogo = () => {
       ) : (
         <div className={styles["logo-container"]}>
           <LogoLongWithoutArrow className={styles["logo-without-arrow"]} />
-          <BrandArrow
+          <BrandArrowIcon
             ref={brandArrowRef}
             style={{ transform: `rotate(${arrowAngle}rad)` }}
             className={styles["brand-arrow"]}
