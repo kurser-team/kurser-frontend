@@ -1,9 +1,11 @@
-import { FC, HTMLAttributes } from "react"
+import { HTMLAttributes } from "react"
 
-export interface SkeletonProps extends HTMLAttributes<HTMLSpanElement> {
-  height: number
-}
+import styles from "./Skeleton.module.scss"
+import clsx from "clsx"
 
-export const Skeleton: FC<SkeletonProps> = ({ height, ...props }) => {
-  return <span style={{ height: height }} {...props}></span>
+export const Skeleton = ({
+  className,
+  ...props
+}: HTMLAttributes<HTMLDivElement>) => {
+  return <div className={clsx(className, styles.container)} {...props}></div>
 }

@@ -1,0 +1,20 @@
+@use "@shared/styles/variables/sizes" as sizes;
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-widget-sc) 25%, var(--color-text-sc) 50%, var(--color-widget-sc) 75%);
+  background-size: 200% 100%;
+  animation: 1.5s infinite ease-in-out skeleton-shimmer;
+  border-radius: sizes.$border-radius-default;
+}
