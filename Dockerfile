@@ -1,13 +1,8 @@
 FROM node:22
 
-WORKDIR /usr/src/app
-
+WORKDIR /app
 COPY package*.json ./
-
-RUN yarn install
-
+RUN npm install
 COPY . .
-
 RUN yarn build
-
-CMD ["yarn", "start"]
+CMD yarn start
