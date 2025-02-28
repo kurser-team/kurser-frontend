@@ -1,0 +1,5 @@
+@use "@shared/styles/variables/animations" as animations;
+
+@mixin default-transition {
+  transition: animations.$default-transition-duration;
+}

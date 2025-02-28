@@ -1,0 +1,29 @@
+.container {
+  position: relative;
+  display: flex;
+}
+
+.input {
+  appearance: none;
+  position: absolute;
+}
+
+.label {
+  cursor: pointer;
+
+  color: var(--color-icon-sc);
+
+  &:hover {
+    color: var(--color-icon-pr);
+  }
+
+  &[data-active="true"] {
+    cursor: default;
+    color: var(--color-icon-pr);
+  }
+
+  svg {
+    width: 24px;
+    aspect-ratio: square;
+  }
+}

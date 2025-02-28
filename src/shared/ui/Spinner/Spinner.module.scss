@@ -21,8 +21,10 @@
 @mixin arrow-pulse-animation($deltaX, $deltaY, $angle, $name, $delay) {
   @include arrow-pulse-mixin($deltaX, $deltaY, $angle, $name);
 
-  transform: translate(0px, 0px) rotate($angle);
-  animation: 1s infinite ease-in-out $delay $name;
+  & {
+    transform: translate(0px, 0px) rotate($angle);
+    animation: 1s infinite ease-in-out $delay $name;
+  }
 }
 
 .arrow {
