@@ -1,0 +1,38 @@
+@use "@shared/styles/mixins/animations" as animations;
+@use "@shared/styles/variables/typography" as typography;
+
+.container {
+  position: relative;
+  display: flex;
+}
+
+.input {
+  appearance: none;
+  position: absolute;
+}
+
+.label {
+  @include animations.default-hover-transition;
+  @include typography.h4;
+
+  cursor: pointer;
+  color: var(--color-icon-sc);
+  border-top: 1px solid var(--color-widget-sc);
+  padding: 12px 16px;
+
+  &:hover {
+    color: var(--color-icon-pr);
+  }
+
+  &[data-active="true"] {
+    cursor: default;
+    border-top: 1px solid var(--color-icon-pr);
+    color: var(--color-icon-pr);
+  }
+
+  svg {
+    height: 22px;
+    width: 22px;
+    aspect-ratio: square;
+  }
+}
