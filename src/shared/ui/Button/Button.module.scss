@@ -1,8 +1,10 @@
 @use "@shared/styles/variables/sizes" as sizes;
 @use "@shared/styles/variables/typography" as typography;
+@use "@shared/styles/mixins/animations" as animations;
 
 .button {
   @include typography.h4;
+  @include animations.default-hover-transition;
 
   border: 1px var(--color-widget-sc) solid;
   border-radius: sizes.$border-radius-default;

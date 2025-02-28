@@ -1,5 +1,7 @@
 @use "@shared/styles/variables/animations" as animations;
 
-@mixin default-transition {
-  transition: animations.$default-transition-duration;
+@mixin default-hover-transition {
+  transition-property: all;
+  transition-duration: animations.$default-transition-duration;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }

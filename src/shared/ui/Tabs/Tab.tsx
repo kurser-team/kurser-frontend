@@ -5,7 +5,7 @@ import clsx from "clsx"
 
 export interface TabProps extends HTMLAttributes<HTMLDivElement> {
   value: string
-  isActive: boolean
+  isActive?: boolean
   label?: string
   name?: string
   Icon?: FC<unknown>
