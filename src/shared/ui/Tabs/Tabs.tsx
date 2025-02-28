@@ -5,6 +5,7 @@ import {
   cloneElement,
   FormEvent,
   HTMLAttributes,
+  memo,
   ReactElement,
 } from "react"
 import { v4 } from "uuid"
@@ -18,7 +19,7 @@ export interface TabsProps extends HTMLAttributes<HTMLFieldSetElement> {
   setTab: (tab: string) => void
 }
 
-export const Tabs = ({
+const TabsComponent = ({
   children,
   className,
   tab,
@@ -50,3 +51,5 @@ export const Tabs = ({
     </fieldset>
   )
 }
+
+export const Tabs = memo(TabsComponent)
