@@ -10,7 +10,7 @@ import "@shared/styles/global/_themes.scss"
 export const metadata: Metadata = {
   title: "kurser wallet",
   description:
-    "Your friendly guide to the crypto world - safe, simple, and smart",
+    "Your friendly guide to the crypto world — safe, simple, and smart",
   icons: {
     icon: "/favicon.ico",
   },
