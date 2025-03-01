@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "start:firefox": "web-ext run --source-dir ./dist/ --verbose"
   },
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
@@ -26,6 +27,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
     "prettier": "^3.4.2",
-    "typescript": "^5"
+    "typescript": "^5",
+    "web-ext": "^8.4.0"
   }
 }
