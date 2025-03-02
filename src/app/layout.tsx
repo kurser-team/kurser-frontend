@@ -1,8 +1,11 @@
 import clsx from "clsx"
-import { Geist } from "next/font/google"
 import { Metadata } from "next"
+import { Geist } from "next/font/google"
 
-const geist = Geist({ subsets: ["latin"] })
+const geist = Geist({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+})
 
 import styles from "./layout.module.scss"
 import "@shared/styles/global/_themes.scss"

@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node post-build.js",
     "start": "next start",
     "lint": "next lint",
-    "start:firefox": "web-ext run --source-dir ./dist/ --verbose"
+    "start:firefox": "web-ext run --source-dir ./dist/ --devtools",
+    "build:firefox": "web-ext build --source-dir ./dist/ --artifacts-dir ./dist/firefox"
   },
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
