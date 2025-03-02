@@ -8,7 +8,7 @@ const geist = Geist({
 })
 
 import styles from "./layout.module.scss"
-import "@shared/styles/global/_themes.scss"
+import "@shared/styles/globals.scss"
 
 export const metadata: Metadata = {
   title: "kurser wallet",

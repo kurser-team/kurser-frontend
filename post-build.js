@@ -17,23 +17,6 @@ const renameImports = (filePath) => {
   fs.writeFileSync(filePath, updatedData)
 }
 
-const fixLinkAttributes = (filePath) => {
-  const data = fs.readFileSync(filePath, "utf-8")
-  const updatedData = data.replace(
-    /<script>([\s\S]*?)<\/script>/g,
-    (_, scriptContent) => {
-      const scriptFileName = `script_${Date.now() + Math.random()}.js`
-      const scriptDir = path.join(distDir, "scripts")
-      if (!fs.existsSync(scriptDir)) {
-        fs.mkdirSync(scriptDir)
-      }
-      fs.writeFileSync(path.join(scriptDir, scriptFileName), scriptContent)
-      return `<script src="scripts/${scriptFileName}"></script>`
-    }
-  )
-  fs.writeFileSync(filePath, updatedData)
-}
-
 const removeInlineScripts = (filePath) => {
   const data = fs.readFileSync(filePath, "utf-8")
   const updatedData = data.replace(

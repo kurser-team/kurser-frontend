@@ -1,0 +1,21 @@
+@use "../variables/_sizes.scss" as sizes;
+@use "../mixins/_animations.scss" as animations;
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @include animations.default-hover-transition;
+
+  background: var(--color-text-fg);
+  border-radius: sizes.$border-radius-default;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-sc);
+}
