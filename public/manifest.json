@@ -1,13 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "My Next.js Extension",
+  "name": "kurser",
   "version": "1.0",
-  "description": "A browser extension built with Next.js and React",
+  "description": "Your friendly guide to the crypto world — safe, simple, and smart",
   "permissions": ["activeTab"],
   "action": {
     "default_popup": "index.html"
   },
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "icons": {
+    "64": "icons/icon64.png",
+    "128": "icons/icon128.png"
   }
 }
