@@ -28,7 +28,7 @@ const removeInlineScripts = (filePath) => {
         fs.mkdirSync(scriptDir)
       }
       fs.writeFileSync(path.join(scriptDir, scriptFileName), scriptContent)
-      return `<script src="scripts/${scriptFileName}"></script>`
+      return `<script src="/scripts/${scriptFileName}"></script>`
     }
   )
   fs.writeFileSync(filePath, updatedData)
